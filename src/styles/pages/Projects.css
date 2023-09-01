@@ -1,0 +1,17 @@
+/* Estilizar el contenedor general de la página */
+div {
+  text-align: center;
+}
+
+/* Estilizar el título de la página */
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Estilizar el contenedor de proyectos */
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}

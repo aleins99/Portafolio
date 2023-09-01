@@ -1,0 +1,73 @@
+/* Estilizar la tarjeta del proyecto */
+.project-card {
+  width: 300px;
+  background-color: var(--secondary);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 1rem;
+  overflow: hidden;
+  text-align: center;
+  color: var(--text);
+}
+
+/* Estilizar el título del proyecto dentro de la tarjeta */
+.project-card h3 {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  padding: 0 1rem;
+}
+
+/* Estilizar la descripción del proyecto */
+.project-card p {
+  font-size: 1rem;
+  margin: 1rem 0;
+  padding: 0 1rem;
+  letter-spacing: normal;
+  font-weight: 400;
+}
+
+/* Estilizar la lista de tecnologías utilizadas */
+.project-card ul {
+  list-style: none;
+  padding: 0 1rem;
+}
+
+.project-card li {
+  background-color: #eee;
+  margin: 0.3rem 0;
+  padding: 0.3rem;
+  border-radius: 4px;
+}
+
+/* Estilizar el botón o el enlace al proyecto */
+.project-card a {
+  display: inline-block;
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--primary);
+  color: var(--text);
+  border-radius: 4px;
+  text-decoration: none;
+}
+.project-card a:hover {
+  transform: translate(0, -3px);
+  box-shadow: 0 20px 80px -10px var(--primary);
+}
+.project-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /*add grayscale */
+  filter: grayscale(100%);
+  animation: colorize 0.5s ease 0.5s forwards; /* Duración, tipo, retardo, llenado hacia adelante */
+}
+
+@keyframes colorize {
+  from {
+    filter: grayscale(100%);
+  }
+  to {
+    filter: grayscale(0%);
+  }
+}
