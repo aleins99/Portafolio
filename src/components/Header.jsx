@@ -7,7 +7,7 @@ const Header = () => {
       <h1>Alejandro Marín</h1>
       <nav>
         <Link to="/">Inicio</Link>
-        <Link to="/projects">Proyectos</Link>
+        <a href="#projects">Proyectos</a>
         <Link to="/about-me">Acerca de Mí</Link>
         <Link to="/contact">Contacto</Link>
       </nav>

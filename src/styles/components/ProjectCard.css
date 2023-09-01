@@ -1,7 +1,7 @@
 /* Estilizar la tarjeta del proyecto */
 .project-card {
-  width: 300px;
-  background-color: var(--secondary);
+  width: 360px;
+  background-color: #000814;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin: 1rem;
@@ -52,22 +52,4 @@
 .project-card a:hover {
   transform: translate(0, -3px);
   box-shadow: 0 20px 80px -10px var(--primary);
-}
-.project-image {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  /*add grayscale */
-  filter: grayscale(100%);
-  animation: colorize 0.5s ease 0.5s forwards; /* Duración, tipo, retardo, llenado hacia adelante */
-}
-
-@keyframes colorize {
-  from {
-    filter: grayscale(100%);
-  }
-  to {
-    filter: grayscale(0%);
-  }
 }

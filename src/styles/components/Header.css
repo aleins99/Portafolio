@@ -1,8 +1,8 @@
 header {
-  color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: var(--text);
   padding: 1rem;
 }
 header h1 {

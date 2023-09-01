@@ -1,6 +1,10 @@
 /* Estilizar el contenedor general de la página */
 div {
   text-align: center;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 /* Estilizar el título de la página */
@@ -10,7 +14,7 @@ h2 {
 }
 
 /* Estilizar el contenedor de proyectos */
-.projects-container {
+#projects {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 1rem;

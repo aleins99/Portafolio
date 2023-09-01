@@ -1,15 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap"); /* Reset de algunos elementos para quitar márgenes y paddings por defecto */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700&display=swap");
 :root {
-  --text: #fcfcfc;
-  --bg: #0d0d0d;
-  --primary: #4201ff;
-  --secondary: #171717;
-  --accent: #32bd8a;
-  --primarycontrast: #64d97b;
-  --secondarycontrast: #64d97b;
-  --accentcontrast: #64d97b;
-  --textcontrast: #64d97b;
-  --bgcontrast: #64d97b;
+  --text: #fafcff;
+  --bg: #000205;
+  --primary: #06296f;
+  --secondary: #031435;
+  --accent: #125df3;
 }
 
 body,
@@ -29,8 +24,8 @@ body {
   font-family: "Arial", sans-serif;
   line-height: 1.6;
   color: var(--text);
-  background-color: #020303;
-  font-family: "Roboto", sans-serif;
+  background-color: var(--bg);
+  font-family: "Inter", sans-serif;
 }
 #root {
   margin: 0;
@@ -47,7 +42,7 @@ body {
 }
 a {
   text-decoration: none;
-  color: #333;
+  color: var(--text);
 }
 
 /* Estilos para contenedores y secciones */
@@ -63,7 +58,6 @@ a {
 
 /* Estilos de encabezado y pie de página */
 footer {
-  color: white;
   padding: 1rem 0;
 }
 
@@ -81,8 +75,8 @@ p {
 
 /* Efectos en botones */
 button {
-  background-color: #50b3a2;
-  color: white;
+  background-color: var(--primary);
+  color: var(--text);
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
