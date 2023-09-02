@@ -53,3 +53,13 @@
 .project-card:hover > .card-container .card-front img {
   filter: grayscale(0%);
 }
+@media (max-width: 768px) {
+  .card-front img {
+    object-fit: contain;
+    width: 100%;
+  }
+  .card-front,
+  .card-back {
+    font-size: 0.9em;
+  }
+}

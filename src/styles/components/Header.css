@@ -12,3 +12,56 @@ header h1 {
 nav a:hover {
   color: var(--primary);
 }
+/* Show hamburger menu on the right */
+.hamburger {
+  margin-left: auto;
+  display: none; /* Hide by default */
+}
+
+/* Animate hamburger menu */
+.hamburger.active {
+  transform: rotate(90deg);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Show nav items in column when menu is open */
+.nav-menu.open {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Hide nav items when menu is closed */
+.nav-menu.hidden {
+  display: none;
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+  .header {
+    justify-content: initial;
+  }
+  .hamburger {
+    display: block; /* Show hamburger menu */
+  }
+  .nav-menu {
+    display: none; /* Hide nav menu */
+  }
+  .nav-menu.open {
+    display: flex; /* Show nav menu when open */
+    font-size: 1rem;
+    padding: 10px;
+    margin: 15px;
+  }
+  .nav-menu.open a {
+    margin-top: 5px;
+  }
+}
+
+/* Ensure the nav menu is visible on larger screens */
+@media (min-width: 769px) {
+  .nav-menu {
+    display: flex;
+    flex-direction: row;
+  }
+}

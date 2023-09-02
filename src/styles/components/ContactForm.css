@@ -4,3 +4,13 @@ form {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 768px) {
+  form {
+    align-items: flex-start;
+    padding: 0.5rem;
+  }
+  form input,
+  form button {
+    width: 80%;
+  }
+}

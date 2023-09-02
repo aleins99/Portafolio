@@ -8,7 +8,7 @@ const ProjectCard = ({ title, description, technologies, link, image }) => {
       <FlippingCard imageSrc={image} description={description} />
       <p>Tecnologías utilizadas: {technologies.join(", ")}</p>
       <a href={link} target="_blank" rel="noreferrer">
-        Ver en GitHub
+        Código Fuente
       </a>
     </div>
   );
