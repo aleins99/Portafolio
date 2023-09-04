@@ -50,10 +50,14 @@
   height: 100%;
 }
 
+.card-back p {
+  padding: 1rem;
+}
+
 .project-card:hover > .card-container .card-front img {
   filter: grayscale(0%);
 }
-@media (max-width: 768px) {
+@media (max-width: 820px) {
   .card-front img {
     object-fit: contain;
     width: 100%;

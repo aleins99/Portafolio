@@ -1,26 +1,58 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../styles/components/Header.css";
 import { Link } from "react-router-dom";
 function Header() {
-  const [isMenuOpen, setIsMenuOpen] = useState(true);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+  const closeMenuOnResize = () => {
+    if (window.innerWidth > 820 && isMenuOpen) {
+      setIsMenuOpen(false);
+    }
+  };
 
+  // Add a resize event listener to handle screen width changes
+  useEffect(() => {
+    window.addEventListener("resize", closeMenuOnResize);
+    return () => {
+      window.removeEventListener("resize", closeMenuOnResize);
+    };
+  }, [isMenuOpen]);
   return (
     <header>
+      <h1>Alejandro Marín</h1>
       <button
-        className={`hamburger ${isMenuOpen ? "active" : ""}`}
+        className={`hamburger ${isMenuOpen ? "nav-menu" : ""}`}
         onClick={toggleMenu}
       >
         ☰
       </button>
       <nav className={`nav-menu ${isMenuOpen ? "open" : "hidden"}`}>
-        <Link to="/">Inicio</Link>
-        <a href="#projects">Proyectos</a>
-        <Link to="/about-me">Acerca de Mí</Link>
-        <Link to="/contact">Contacto</Link>
+        <div
+          className={`${isMenuOpen ? "close-menu open" : "hamburger"}`}
+          onClick={toggleMenu}
+        >
+          <span>X</span>
+        </div>
+        <ul>
+          <li>
+            <a href="#home">Inicio</a>
+          </li>
+          <li>
+            <a href="#projects">Proyectos</a>
+          </li>
+          <li>
+            <a href="#">Acerca de Mí</a>
+          </li>
+          <li>
+            <a href="/contact">Contacto</a>
+          </li>
+        </ul>
+        <button className="btn-secondary">
+          <a>CV</a>
+        </button>
       </nav>
     </header>
   );
