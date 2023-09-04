@@ -122,7 +122,7 @@ nav a:hover {
   }
   .nav-menu ul {
     flex-direction: column;
-    height: 85%;
+    height: 75%;
     width: 100%;
     gap: 1.5rem;
     margin: 10px 0 0;
