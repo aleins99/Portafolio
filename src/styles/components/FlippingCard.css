@@ -5,6 +5,7 @@
   width: 100%; /* O establece un ancho específico */
   overflow: hidden;
   padding: 0;
+  flex-basis: calc(100% / 3);
 }
 
 .card-inner {
@@ -59,7 +60,7 @@
   padding: 1rem;
 }
 
-.project-card:hover > .card-container .card-front img {
+.project-card:hover > .upper .card-container .card-front img {
   filter: grayscale(0%);
 }
 @media (max-width: 820px) {

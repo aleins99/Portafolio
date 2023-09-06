@@ -54,6 +54,7 @@ nav a:hover {
   display: block;
   font-size: 1rem;
   width: 100%;
+  font-weight: 500;
 }
 
 .nav-menu.open {
