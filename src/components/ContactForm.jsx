@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/components/ContactForm.css";
+import { Fish } from "@phosphor-icons/react/dist/ssr";
 
 const ContactForm = () => {
   return (

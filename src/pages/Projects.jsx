@@ -4,7 +4,7 @@ import ProjectCard from "../components/ProjectCard";
 import projects from "../utils/projectsData";
 const Projects = () => {
   return (
-    <div>
+    <div id="my-projects">
       <h2>Mis Proyectos</h2>
       <div id="projects">
         {projects.map((project, index) => (

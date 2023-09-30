@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "../styles/components/Header.css";
 import { Link } from "react-router-dom";
+import pdf from "../assets/cv.pdf";
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -41,17 +42,17 @@ function Header() {
             <a href="#home">Inicio</a>
           </li>
           <li>
-            <a href="#projects">Proyectos</a>
+            <a href="#my-projects">Proyectos</a>
           </li>
+
           <li>
-            <a href="#">Acerca de Mí</a>
-          </li>
-          <li>
-            <a href="/contact">Contacto</a>
+            <a href="#contact">Contacto</a>
           </li>
         </ul>
         <button className="btn-secondary">
-          <a>CV</a>
+          <a href={pdf} target="_blank" rel="noreferrer">
+            CV
+          </a>
         </button>
       </nav>
     </header>

@@ -6,6 +6,13 @@ header {
   color: var(--text);
   padding: 1rem;
   border-bottom: 2px solid hsl(257deg 100% 50% / 10%);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: var(--bg);
+}
+header li {
+  text-transform: uppercase;
 }
 
 header h1 {
@@ -61,7 +68,7 @@ nav a:hover {
   display: flex;
   flex-direction: column;
   position: fixed;
-  min-width: 250px;
+  min-width: 300px;
   z-index: 1000;
   top: 0;
   right: 0;

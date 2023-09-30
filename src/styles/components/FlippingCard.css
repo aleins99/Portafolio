@@ -58,6 +58,8 @@
 
 .card-back p {
   padding: 1rem;
+  text-align: left;
+  font-size: 18px;
 }
 
 .project-card:hover > .upper .card-container .card-front img {

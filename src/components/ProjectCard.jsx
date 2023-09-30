@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/components/ProjectCard.css";
 import FlippingCard from "./FlippingCard";
+import PropTypes from "prop-types";
 const ProjectCard = ({ title, description, technologies, link, image }) => {
   return (
     <div className="project-card">
@@ -21,6 +22,14 @@ const ProjectCard = ({ title, description, technologies, link, image }) => {
       </a>
     </div>
   );
+};
+
+ProjectCard.propTypes = {
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  technologies: PropTypes.arrayOf(PropTypes.string).isRequired,
+  link: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
 };
 
 export default ProjectCard;

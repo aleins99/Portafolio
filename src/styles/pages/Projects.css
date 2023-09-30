@@ -24,6 +24,7 @@ h2 {
   #projects {
     grid-template-columns: repeat(2, 1fr);
     padding: 0;
+    justify-items: center;
   }
 
   @media (max-width: 820px) {
