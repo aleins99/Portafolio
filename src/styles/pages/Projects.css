@@ -12,7 +12,9 @@ h2 {
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
 }
-
+#my-projects {
+  padding-top: 70px;
+}
 /* Estilizar el contenedor de proyectos */
 #projects {
   display: grid;

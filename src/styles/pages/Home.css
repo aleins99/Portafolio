@@ -1,10 +1,9 @@
 .home-page {
   text-align: left;
-  padding: 3rem;
-  padding-left: 0;
-  margin-bottom: 20px;
+  padding: 5rem 0 0 1rem;
   font-size: 18px;
 }
+
 .home-page span {
   font-weight: 500;
   font-style: italic;
@@ -29,6 +28,7 @@
   .home-page {
     font-size: 14px;
     padding: 10px;
+    padding-top: 80px;
   }
   .home-page span {
     font-weight: 500;

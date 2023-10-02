@@ -6,6 +6,7 @@
   overflow: hidden;
   padding: 0;
   flex-basis: calc(100% / 3);
+  background-color: transparent;
 }
 
 .card-inner {
@@ -41,8 +42,6 @@
   object-position: center;
   filter: grayscale(80%);
   border-radius: 12px;
-  backface-visibility: hidden;
-
   transition: filter 0.5s ease;
 }
 
