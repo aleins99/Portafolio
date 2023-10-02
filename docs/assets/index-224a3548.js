@@ -12294,7 +12294,7 @@ Id.propTypes = {
   link: xn.string.isRequired,
   image: xn.string.isRequired,
 };
-const vm = "/assets/monster-rolodex-a77e7000.png",
+const vm = "./assets/monster-rolodex-a77e7000.png",
   gm = "./assets/pig-game-ebed7a3d.png",
   ym = "./assets/turnero-c71882bb.png",
   wm = "./assets/adoptPet-d339442f.png",
