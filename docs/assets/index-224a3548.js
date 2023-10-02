@@ -12178,11 +12178,11 @@ const sm = () =>
       z.jsx("h1", { children: " Soy un Desarrollador Web de Paraguay 🇵🇾." }),
       z.jsx("p", {
         children:
-          "Me encanta aprender y mejorar siempre tanto personal como profesional.",
+          "Me encanta aprender y mejorar siempre tanto en lo personal como profesionalmente.",
       }),
       z.jsx("p", {
         children:
-          "Hice está página para compartir lo que voy aprendiendo y así mostrar mis habilidades como desarrollador.",
+          "Cree esta página para compartir lo que voy aprendiendo y mostrar mis habilidades como desarrollador.",
       }),
     ],
   });
