@@ -11,7 +11,7 @@ const Home = () => {
         Me encanta aprender y mejorar siempre tanto en lo personal como profesionalmente.
       </p>
       <p>
-        Cree está página para compartir lo que voy aprendiendo y mostrar mis
+        Cree esta página para compartir lo que voy aprendiendo y mostrar mis
         habilidades como desarrollador.
       </p>
     </div>
