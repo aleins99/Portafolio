@@ -8,10 +8,10 @@ const Home = () => {
       <h1>Alejandro Marín</h1>
       <h1> Soy un Desarrollador Web de Paraguay 🇵🇾.</h1>
       <p>
-        Me encanta aprender y mejorar siempre tanto personal como profesional.
+        Me encanta aprender y mejorar siempre tanto en lo personal como profesionalmente.
       </p>
       <p>
-        Hice está página para compartir lo que voy aprendiendo y así mostrar mis
+        Cree está página para compartir lo que voy aprendiendo y mostrar mis
         habilidades como desarrollador.
       </p>
     </div>
