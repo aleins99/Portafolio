@@ -14,7 +14,7 @@ const projects = [
     technologies: [
       "Django REST Framework",
       "React",
-      "TailwindCSS",
+      "Tailwind CSS",
       "MongoDB",
       "JWT",
       "Docker",
@@ -26,9 +26,9 @@ const projects = [
     description:
       "Sistema de Proyectos basada en la metodología SCRUM, donde puedes crear proyectos, crear roles, agregar tareas, agregar miembros, agregar comentarios,manejo de us, tablero kanban, historial de proyectos y avisos por correo. ",
     technologies: [
-      "Boostrap",
-      "Oauth2",
-      "Javascript",
+      "Bootstrap",
+      "OAuth2",
+      "JavaScript",
       "Django",
       "AJAX",
       "PostgreSQL",
