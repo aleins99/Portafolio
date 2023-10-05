@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "../styles/components/Header.css";
-import { Link } from "react-router-dom";
 import pdf from "../assets/cv.pdf";
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -8,14 +7,15 @@ function Header() {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-  const closeMenuOnResize = () => {
-    if (window.innerWidth > 820 && isMenuOpen) {
-      setIsMenuOpen(false);
-    }
-  };
+
 
   // Add a resize event listener to handle screen width changes
   useEffect(() => {
+    const closeMenuOnResize = () => {
+      if (window.innerWidth > 820 && isMenuOpen) {
+        setIsMenuOpen(false);
+      }
+    };
     window.addEventListener("resize", closeMenuOnResize);
     return () => {
       window.removeEventListener("resize", closeMenuOnResize);
@@ -50,7 +50,7 @@ function Header() {
           </li>
         </ul>
         <button className="btn-secondary">
-          <a href={pdf} target="_blank" rel="noreferrer">
+          <a className="link-cv" href={pdf} target="_blank" rel="noreferrer">
             CV
           </a>
         </button>

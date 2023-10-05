@@ -7,6 +7,7 @@ import agileProject from "../images/agileProject.png";
 // Supongamos que tienes un array con tus proyectos
 const projects = [
   {
+    id: 1,
     title: "CofeeTime",
     description:
       "Sistema de Cafetería con uso de roles como Administrador, Recepcionista y Cocinero, cada uno con una pantalla diferente.",
@@ -22,6 +23,7 @@ const projects = [
     link: "https://github.com/aleins99/CofeeTime",
   },
   {
+    id: 2,
     title: "Agile Project",
     description:
       "Sistema de Proyectos basada en la metodología SCRUM, donde puedes crear proyectos, crear roles, agregar tareas, agregar miembros, agregar comentarios,manejo de us, tablero kanban, historial de proyectos y avisos por correo. ",
@@ -37,6 +39,7 @@ const projects = [
     link: "https://github.com/aleins99/PROYECTO_IS2",
   },
   {
+    id: 3,
     title: "Turnero",
     description:
       "Sistema de registro turnos, donde puedes agregar diferentes categorías y ordenarlas por preferencia o condición de salud.",
@@ -45,6 +48,7 @@ const projects = [
     link: "https://github.com/aleins99/Turnero",
   },
   {
+    id: 4,
     title: "Adopt Me",
     description:
       "Una página que simula el proceso de adoptar animales por medio de una página web.",
@@ -53,6 +57,7 @@ const projects = [
     link: "https://github.com/aleins99/AdoptPet",
   },
   {
+    id: 5,
     title: "Monster Rolodex",
     description: "Mi primer proyecto usando React ⚛. ",
     technologies: ["React", "JavaScript", "HTML", "CSS"],
@@ -60,6 +65,7 @@ const projects = [
     link: "",
   },
   {
+    id: 6,
     title: "Pig Game",
     description: "Este es un juego de 2 jugadores para pasarla bien :).",
     technologies: ["JavaScript", "HTML", "CSS"],
