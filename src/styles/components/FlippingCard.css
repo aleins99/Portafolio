@@ -44,6 +44,7 @@
   object-position: center;
   filter: grayscale(80%);
   border-radius: 12px;
+  transition: filter 0.5s ease;
 }
 
 .card-back {
@@ -64,10 +65,15 @@
 .project-card:hover > .upper .card-container .card-front img {
   filter: grayscale(0%);
 }
+
+
+
+
 @media (max-width: 820px) {
   .card-front img {
     object-fit: contain;
     width: 100%;
+    transition: filter 0.1s ease-in;
   }
   .card-front,
   .card-back {
