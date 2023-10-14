@@ -1,10 +1,9 @@
-import monster from "../images/monster-rolodex.png";
-import pigGame from "../images/pig-game.png";
-import turnero from "../images/turnero.png";
-import adoptMe from "../images/adoptPet.png/";
-import cofeetime from "../images/cofeetime.png";
-import agileProject from "../images/agileProject.png";
-// Supongamos que tienes un array con tus proyectos
+import monster from "../images/monster-rolodex.jpg";
+import pigGame from "../images/pig-game.jpg";
+import turnero from "../images/turnero.jpg";
+import adoptMe from "../images/adoptPet.jpg/";
+import cofeetime from "../images/cofeetime.jpg";
+import agileProject from "../images/agileProject.jpg";
 const projects = [
   {
     id: 1,
