@@ -8,7 +8,6 @@ function Header() {
     setIsMenuOpen(!isMenuOpen);
   };
 
-
   // Add a resize event listener to handle screen width changes
   useEffect(() => {
     const closeMenuOnResize = () => {
@@ -23,38 +22,40 @@ function Header() {
   }, [isMenuOpen]);
   return (
     <header>
-      <h1>Alejandro Marín</h1>
-      <button
-        className={`hamburger ${isMenuOpen ? "nav-menu" : ""}`}
-        onClick={toggleMenu}
-      >
-        ☰
-      </button>
-      <nav className={`nav-menu ${isMenuOpen ? "open" : "hidden"}`}>
-        <div
-          className={`${isMenuOpen ? "close-menu open" : "hamburger"}`}
+      <div className="wrapper">
+        <h1>Alejandro Marín</h1>
+        <button
+          className={`hamburger ${isMenuOpen ? "nav-menu" : ""}`}
           onClick={toggleMenu}
         >
-          <span>X</span>
-        </div>
-        <ul>
-          <li>
-            <a href="#home">Inicio</a>
-          </li>
-          <li>
-            <a href="#my-projects">Proyectos</a>
-          </li>
-
-          <li>
-            <a href="#contact">Contacto</a>
-          </li>
-        </ul>
-        <button className="btn-secondary">
-          <a className="link-cv" href={pdf} target="_blank" rel="noreferrer">
-            CV
-          </a>
+          ☰
         </button>
-      </nav>
+        <nav className={`nav-menu ${isMenuOpen ? "open" : "hidden"}`}>
+          <div
+            className={`${isMenuOpen ? "close-menu open" : "hamburger"}`}
+            onClick={toggleMenu}
+          >
+            <span>X</span>
+          </div>
+          <ul>
+            <li>
+              <a href="#home">Inicio</a>
+            </li>
+            <li>
+              <a href="#my-projects">Proyectos</a>
+            </li>
+
+            <li>
+              <a href="#contact">Contacto</a>
+            </li>
+          </ul>
+          <button className="btn-secondary">
+            <a className="link-cv" href={pdf} target="_blank" rel="noreferrer">
+              CV
+            </a>
+          </button>
+        </nav>
+      </div>
     </header>
   );
 }

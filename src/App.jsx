@@ -8,13 +8,15 @@ import AboutMe from "./pages/AboutMe";
 import "./App.css";
 function App() {
   return (
-    <div className="app">
+    <>
       <Header />
-      <Home />
-      <AboutMe />
-      <Projects />
-      <Footer />
-    </div>
+      <div className="app">
+        <Home />
+        <AboutMe />
+        <Projects />
+        <Footer />
+      </div>
+    </>
   );
 }
 

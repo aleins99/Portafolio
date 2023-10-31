@@ -1,15 +1,21 @@
 /* Header Styles */
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: var(--text);
-  padding: 1rem;
-  border-bottom: 2px solid hsl(257deg 100% 50% / 10%);
   position: sticky;
   top: 0;
   z-index: 999;
-  background-color: var(--bg);
+  background-color: hsl(227.1 46.7% 5.9% / 0.9);
+  backdrop-filter: blur(12px);
+}
+.wrapper {
+  display: flex;
+  max-width: 1200px;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  color: var(--text);
+  margin: 0 auto;
+  padding: 0.8em 1rem;
+  border-bottom: 2px solid hsl(257deg 100% 50% / 10%);
 }
 header li {
   text-transform: uppercase;
