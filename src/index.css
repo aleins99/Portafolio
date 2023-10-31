@@ -8,6 +8,7 @@
   --font-small: 1em;
   --font-medium: 1.5em;
   --font-large: 2em;
+  color-scheme: dark;
 }
 
 body,
@@ -96,6 +97,7 @@ button {
 button:hover {
   background-color: var(--secondary);
 }
+
 
 /* Responsive Design Additions */
 
